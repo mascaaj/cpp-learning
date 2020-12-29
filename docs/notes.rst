@@ -5,3 +5,4 @@ Notes
 - String array needs escape characters '\0'
 - Multi array has row col assignment
 - Reading incorrect / unassigned value, will throw garbage.
+- prefix operator (++x) changes the variable immediately, postfix (x++) changes subsequently 
