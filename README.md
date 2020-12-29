@@ -15,5 +15,10 @@ Going thru the motions of formal cpp learning
 - Install vscode, install addons.
 - At command line : 
 ```
-c++ helloworld.cpp -o hello.exe
+c++ helloworld.cpp -o hello.out
 ```
+
+## Workflow guide
+
+- lowerCamelCase for variables containing multiple words.
+- Linux output files should be *.out files (for git ignore to pick them up)
