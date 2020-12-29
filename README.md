@@ -24,3 +24,7 @@ c++ helloworld.cpp -o hello.out
 - Branches should contain standard git flow keywords like feature, bug, hotfix. This will be ignored at current.
 - Branches should have hyphen spacing. Intial few branches might not match this convention.
 - Linux output files should be *.out files (for git ignore to pick them up)
+- To view full git tree at cli use the following command or variations thereof:
+```
+git log --oneline --graph --color --all --decorate
+```
