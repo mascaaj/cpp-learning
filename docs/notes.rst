@@ -14,3 +14,4 @@ Notes
 
     if (x){}
 
+- Function proto-types must be defined before the main block. Defaults must be specified within the prototype definition.
