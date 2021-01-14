@@ -4,23 +4,23 @@
 
 using namespace std;
 
-class Dog
+class Dog           //define the name if the class
 {
-    int age,weight;
+    int age,weight; // define private members of class
     string color;
     
-    public:
-    void bark() {cout << "WOOF!" << endl;}
-    Dog (int,int,string);
-    int getAge() {return age;}
+    public:         // define public members / methods
+    void bark() {cout << "WOOF!" << endl;} // void because no return value
+    Dog (int,int,string);                  // constructor for dog class
+    int getAge() {return age;}             // function to access private members
     int getWeight() {return weight;}
-    string getColor() {return color;}
-    ~Dog();
+    string getColor() {return color;}       
+    ~Dog();                                // destructor for dog class
 };
 
 Dog::Dog (int age,int weight,string color)
 {
-    this -> age = age;
+    this -> age = age;                      // this used because the ns for constructor Dog is class Dog
     this -> weight = weight;
     this -> color = color;
 }

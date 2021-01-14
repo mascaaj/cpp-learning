@@ -25,6 +25,6 @@ int main()
     Jason.speak();
     Jason.speak("What a nice day ?");
 
-    Luis.speak("hola !!");
-    Luis.Man::speak("Es una tarde hermosa");
+    Luis.speak("hola !!");                      // uses the overridden method with no spaces
+    Luis.Man::speak("Es una tarde hermosa");    // uses the base class method with space
 }
