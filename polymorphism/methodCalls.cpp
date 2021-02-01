@@ -35,6 +35,7 @@ int main()
 {
     Bird* pPigeon = new Pigeon;
     Bird* pChicken = new Chicken;
+    Chicken chicken = Chicken();
 
     pPigeon     -> Talk();
     pPigeon     -> Fly();
@@ -42,5 +43,6 @@ int main()
     pChicken    -> Fly();
     pPigeon     -> Bird::Fly();
     pChicken    -> Bird::Fly();
+    chicken.Fly();
     
 }
