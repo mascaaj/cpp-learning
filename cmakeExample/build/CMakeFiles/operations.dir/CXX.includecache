@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/ops.h
+
+/dev_ssd/learning/cpp/cpp-learning/cmakeExample/src/ops.cpp
+ops.h
+/dev_ssd/learning/cpp/cpp-learning/cmakeExample/src/ops.h
+iostream
+-
+

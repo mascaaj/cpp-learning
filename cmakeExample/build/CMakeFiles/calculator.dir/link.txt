@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/calculator.dir/src/sum.cpp.o  -o calculator -Wl,-rpath,/dev_ssd/learning/cpp/cpp-learning/cmakeExample/build liboperations.so 
