@@ -15,17 +15,20 @@ int main()
     void(* fn) (int& a, int* b) = add;
     cout << "Reference  : " << ref << endl;
     cout << "Pointer    : " << *ptr << endl;
-    cout << "Pointer Add: " << ptr << endl;    
+    cout << "Pointer Add: " << ptr << endl;
+    cout << "Pointer Mem Value: " << &ptr << endl;
     fn(ref,ptr);
     ptr = &sum;
     cout << "Reference  : " << ref << endl;
     cout << "Pointer    : " << *ptr << endl;
-    cout << "Pointer Add: " << ptr << endl;    
+    cout << "Pointer Add: " << ptr << endl;
+    cout << "Pointer Mem Value: " << &ptr << endl;
     fn(ref,ptr);
     ptr = &num;
     cout << "Reference  : " << ref << endl;
     cout << "Pointer    : " << *ptr << endl;
-    cout << "Pointer Add: " << ptr << endl;    
+    cout << "Pointer Add: " << ptr << endl;
+    cout << "Pointer Mem Value: " << &ptr << endl;
     fn(ref,ptr);
 }
 

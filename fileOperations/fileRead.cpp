@@ -13,7 +13,7 @@ int main(int argc, char** argv)
     char letter;
     string line;
 
-    // this code snippet, ingests the argument and pushes it to the loop
+    // this code snippet, ingests the argument  from cli and pushes it to the loop
     stringstream stream ;
     stream << argv[1];
     stream >> type;
