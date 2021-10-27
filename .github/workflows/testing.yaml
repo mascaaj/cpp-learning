@@ -15,8 +15,6 @@ jobs:
     - name: Copy and link gtest libraries
       run: cd /usr/src/gtest/lib && sudo cp *.a /usr/lib && sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
     - uses: actions/checkout@v1
-    - name: Post clone file tree
-      run: ls
     - name: configure
       run: cd gtestExample && mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Werror" ..
     - name: make
