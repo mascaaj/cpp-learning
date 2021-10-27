@@ -21,5 +21,5 @@ jobs:
       run: cd gtestExample && mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Werror" ..
     - name: make
       run: cd gtestExample/build && make
-    # - name: Run Test
-    #   run: /home/runner/work/github_actions_gtest_example/github_actions_gtest_example/build/test/github_actions_gtest_example.test
+    - name: Run Test
+      run: ./gtestExample/build/runTests
