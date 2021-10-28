@@ -1,0 +1,23 @@
+name: github-actions-gtest
+
+on:
+  push:
+    branches: [ feature/gtest ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install gtest manually
+      run: sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make && ls lib
+    - name: Copy and link gtest libraries
+      run: cd /usr/src/gtest/lib && sudo cp *.a /usr/lib && sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
+    - uses: actions/checkout@v1
+    - name: configure
+      run: cd gtestExample && mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Werror" ..
+    - name: make
+      run: cd gtestExample/build && make
+    - name: Run Test
+      run: ./gtestExample/build/runTests
