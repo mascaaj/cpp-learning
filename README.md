@@ -18,6 +18,26 @@ Going thru the motions of formal cpp learning
 c++ helloworld.cpp -o hello.out
 ```
 
+For isolated classes :
+```
+c++ file1.cpp classimplementaion.cpp -o output.out
+```
+
+For Cmake :
+- create build folder 
+```
+cd build
+cmake ..
+make
+```
+
+For Gtests :
+```
+mkdir build 
+cd build && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Werror" ..
+make
+./gtestExample/build/runTests
+```
 ## Workflow guide
 
 - lowerCamelCase for variables containing multiple words.

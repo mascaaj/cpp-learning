@@ -33,3 +33,20 @@
 
 # Ide artifacts
 *.vscode
+
+# Cmake Artifacts
+CMakeLists.txt.user
+CMakeCache.txt
+**/CMakeFiles/
+CMakeScripts
+CMakeCache.txt
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+*.bin
+*.internal
+*.cmake
