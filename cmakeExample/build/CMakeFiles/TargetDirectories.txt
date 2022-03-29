@@ -1,0 +1,4 @@
+/dev_ssd/learning/cpp/cpp-learning/cmakeExample/build/CMakeFiles/rebuild_cache.dir
+/dev_ssd/learning/cpp/cpp-learning/cmakeExample/build/CMakeFiles/edit_cache.dir
+/dev_ssd/learning/cpp/cpp-learning/cmakeExample/build/CMakeFiles/operations.dir
+/dev_ssd/learning/cpp/cpp-learning/cmakeExample/build/CMakeFiles/calculator.dir
